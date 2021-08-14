@@ -1,0 +1,35 @@
+<div class="row">
+    <app-cust-button btnName="heyy" btnClass="btn btn-primary" (btnClick)="doSome()"></app-cust-button>
+</div>
+<div class="row">
+    <button class="btn btn-primary btn-lg" (click)="getFakeApi()">Get Fake Api</button>
+</div>
+<br/>
+<div class="row">
+    <button class="btn btn-primary btn-lg" (click)="getCurrentWeather()">Get Current Weather</button>
+</div>
+<br/>
+
+<div class="row">
+    <button class="btn btn-primary btn-lg" (click)="getAllUsers()">Get All Users</button>
+</div>
+<br />
+<div class="row">
+    <button class="btn btn-primary btn-lg" (click)="getSingleUser()">Get Single User</button>
+</div>
+<br>
+<div class="row">
+    <select class="form-select" [(ngModel)]="selectedLevel" (change)="selected()">
+        <option selected>Open this select menu</option>
+        <option *ngFor="let item of dropDownData" [ngValue]="item">{{item.name}}</option>
+    </select>
+    <button class="btn btn-primary btn-lg" (click)="doCalculation()">Do calculation</button>
+
+</div>
+<br />
+<h1>
+    Error Message goes here
+</h1>
+<p>
+    {{errorMsg}}
+</p>

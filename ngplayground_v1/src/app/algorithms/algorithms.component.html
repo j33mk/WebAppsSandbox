@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <textarea [(ngModel)]="txtToProcess" cols=50 rows=10></textarea>
+        </div>
+        <div class="col-md-12">
+            <Button class="btn btn-primary" (click)="processText()">Process Text</Button> &nbsp;
+            <Button class="btn btn-primary" (click)="clearText()">Clear Text</Button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div *ngIf="someInformation.length>0" style="border:1px solid blue;">
+            <p *ngFor="let k of someInformation">{{k}}</p>
+        </div>
+    </div>
+</div>
