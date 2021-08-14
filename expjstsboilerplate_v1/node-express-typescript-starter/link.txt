@@ -1,0 +1,3 @@
+the typescript api was cloned from 
+
+https://github.com/roycechua23/node-express-typescript-starter
